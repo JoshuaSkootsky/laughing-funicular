@@ -7,4 +7,8 @@ acronym('for your information', (err, resp) => {
   console.log(resp);
 });
 
+console.log(randomNumber(NaN, NaN));
+console.log(randomNumber(2, 0));
 console.log(randomNumber(10, 2));
+console.log(randomNumber(NaN, 2));
+console.log(randomNumber(10, NaN));

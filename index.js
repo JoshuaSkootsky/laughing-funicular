@@ -22,10 +22,17 @@ function acronym(sentence, callback) {
   });
 }
 
+const validateNum = (num) => {
+  return typeof num === 'number' && !(num !== num);
+};
+
 function randomNumber(max = 1, min = 0) {
-  if (typeof max !== 'number' && typeof min !== 'number') {
-    min = 0;
+  if (!validateNum(max)) {
     max = 1;
+    min = 0;
+  }
+  if (!validateNum(min)) {
+    min = 0;
   }
   return Math.random() * (max - min) + min;
 }
