@@ -7,20 +7,12 @@
 To use:
 
 ```
-const { acronym, randomNumber, costDisplay } = require('laughing-funicular');
+const { randomNumber, costDisplay } = require('laughing-funicular');
 
 console.log(randomNumber(NaN, NaN)); // outputs a random number between 1 and 0 if not given real min or max
 
 console.log(costDisplay(200011166)); // outputs $ USD 2,000,111.66
 
-
-acronym('for your information', (err, resp) => {
-  if (err) {
-    console.log(err);
-  }
-  console.log(resp);
-});
-// outputs 'fyi'
 ```
 
 ## Joshua Skootsky, 2020

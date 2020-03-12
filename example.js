@@ -1,11 +1,4 @@
-const { acronym, randomNumber, costDisplay } = require('./'); // require the `index.js` file from the same directory.
-
-acronym('for your information', (err, resp) => {
-  if (err) {
-    console.log(err);
-  }
-  console.log(resp);
-});
+const { randomNumber, costDisplay } = require('./'); // require the `index.js` file from the same directory.
 
 console.log(randomNumber(NaN, NaN));
 console.log(randomNumber(2, 0));
