@@ -23,7 +23,6 @@ const costDisplay = (costInt, display = '$ USD ') => {
 };
 
 module.exports = {
-  acronym,
   randomNumber,
   costDisplay,
 };
